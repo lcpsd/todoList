@@ -1,4 +1,4 @@
-# todo
+# Gerenciador Simples de Tarefas ( ToDo List)
 
 <p>Projeto que faz parte dso exercícios do curso de vue da COD3R. </p>
 <p>O intuíto é registrar tarefas, torna-las concluídas ou excluí-las conforme necessário.</p>
