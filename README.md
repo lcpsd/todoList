@@ -12,5 +12,5 @@ npm install
 ```
 npm run serve
 ```
-<img src="https://imgur.com/a/KsqwZLA">
+<img src="https://i.imgur.com/hXIV1AR.png">
 
