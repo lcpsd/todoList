@@ -1,22 +1,32 @@
 <template>
 	<div id="app">
 		<h1>Tarefas</h1>
+		<taskProgress :progress="progress" />
 		<newTask @taskAdded="addTask"/>
 		<taskGrid :tasks="tasks"/>
 	</div>
 </template>
 
 <script>
+import taskProgress from './components/taskProgress'
 import newTask from './components/newTask.vue'
 import taskGrid from './components/taskGrid.vue'
 import eventBus from './components/eventBus'
 
 export default {
-	components: {taskGrid, newTask},
+	components: {taskGrid, newTask,taskProgress},
 	data(){
 		return{
 			tasks: new Array
 		}
+	},
+	computed:{
+		progress(){
+			const total = this.tasks.length
+			const done = this.tasks.filter(t => !t.pending).length
+			return Math.round(done / total * 100) || 0
+		}
+		
 	},
 	methods:{
 		addTask(task){
