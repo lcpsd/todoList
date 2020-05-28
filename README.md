@@ -1,29 +1,15 @@
 # todo
 
-## Project setup
+<p>Projeto que faz parte dso exercícios do curso de vue da COD3R. </p>
+<p>O intuíto é registrar tarefas, torna-las concluídas ou excluí-las conforme necessário.</p>
+
+## Instala Dependências
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Incia o servidor
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
